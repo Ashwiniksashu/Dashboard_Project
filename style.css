@@ -1,0 +1,342 @@
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+    padding: 20px;
+}
+body{
+    font-family: "Sedan SC", serif;
+    background-color: #f5f5f5;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: 20px;
+    border-radius: 30px;
+    background-color: black;
+    height: 90vh;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.profile img{
+    width: 100% ;
+    height:100% ;
+    border-radius: 50%;
+}
+.profile p{
+font-size: 1.4rem;
+color: white;
+font-weight: 250;
+}
+.nav{
+    display: flex;
+    padding-right: 1.5rem;
+    color: white;
+    margin-left: 30px;
+}
+.nav:hover{
+    color: gold;
+}
+.nav > a{
+padding-left: 1.5rem;
+font-weight: 400;
+font-size: 16px;
+color: white;
+text-decoration: none;
+margin-bottom: 30px;
+}
+.nav > a:hover{
+    color: lightgray;
+}
+.right{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header > h1{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+header > input{
+    margin-right: 5%;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    border: 0px solid white;
+    background-color: white;
+}
+header > input:focus{
+    outline: none;
+    border: 3px solid lightgreen;
+}
+#board{
+    width: 85%;
+    border-radius: 1.2rem;
+    background-color: white;
+    margin-left: 2.5rem;
+    padding: 0.5rem;
+
+}
+#board img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+article h3{
+    text-align: center;
+    text-decoration: underline;  
+}
+article h3:hover {
+    text-decoration-color: goldenrod;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+.card-con{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+.card{
+    height: 5rem;
+    width: 9rem;
+    border-radius: 1rem;
+}
+.card1{
+    background-color: lightskyblue;
+}
+.card2{
+    background-color: lightpink;
+}
+.card3{
+    background-color: lightgreen;
+}
+.card4{
+    background-color: lightyellow;
+}
+.card:hover {
+    background: radial-gradient(
+        circle, rgba(238, 174, 202, 1) 0%,
+        rgba(148,187,233,1)100%
+    );
+}
+.card>i{
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+}
+.cardhead{
+margin: 0px;
+margin-left: 0.5rem;
+font-size: 0.9rem;
+
+}
+.carddata{
+   margin-top: 0.2rem;
+   font-size: 0.8rem;
+   margin-left: 0.5rem; 
+}
+#users{
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
+}
+table{
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    background-color: white;
+}
+table th, 
+table td{
+    padding: 0.75rem 10rem;
+    text-align: left;
+}
+table th{
+    background-color: #a39696;
+    font-weight: 600;
+
+}
+table tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+table tbody tr:hover {
+    background-color: #eaeaea;
+}
+#schedule{
+    background-color: white;
+    border-radius: 1.5rem;
+    height: 22.5rem;
+    margin-top: 4rem;
+    overflow-y: scroll;
+    max-height: 20rem;
+    margin-left: 3.5rem;
+}
+.schedule-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+}
+.schedule-head > h3{
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+.schedule-head p{
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-top: 0;
+}
+.meets {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-left: 0.5rem;
+
+}
+.head{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.detail{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #999999;
+}
+.schedule-details > div:nth-child(even){
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-left: 2px solid green;
+}
+.schedule-details > div:nth-child(odd){
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-left: 2px solid skyblue;
+}
+.contact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+#contact h3{
+    text-decoration: underline;
+    text-align: center;
+}
+iframe{
+    border-radius: 2.5rem;
+}
+.feedback-form{
+    background-color: white;
+    border-radius: 2.5rem;
+    padding: 2rem;
+}
+.feedback-form h2{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+
+}
+.feedback-form textarea {
+    resize: vertical;
+    height: 12.5rem;
+}
+.feedback-form input[type="submit"]{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #9bdd7c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+footer a{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+footer div{
+    margin-bottom: 10px;
+}
+footer a:hover{
+    color: lightgrey;
+}
+footer a:first-child {
+    margin-left: 0;
+}
+footer a:last-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width : 780px) {
+    main{
+        display: block;
+    }
+    .left{
+        position: static;
+        height: auto;
+    }
+    .profile-img{
+        width: 15%;
+        position: absolute;
+        top: 0.1rem;
+    }
+    .profile p{
+        margin-top: 3rem;
+    }
+    .navbar{
+        display: flex;
+        margin:0%;
+        justify-content: space-around;
+    }
+    .nav{
+        margin: 0%;
+        padding: 0%;
+    }
+    .navbar i{
+        display: none;
+    }
+}
+
+
